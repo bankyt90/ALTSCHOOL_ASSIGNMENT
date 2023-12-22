@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #F7FDFC;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-box { 
+    margin-top: 8rem;
+}
+
+.text-box img {
+    width: 77.33px;
+
+}
+
+.mobile-active {
+    display: none;
+}
+
+.text-box p {
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+.container {
+    width: 50%;
+    border: 1px solid white;
+    background-color: white;
+    padding: 20px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="date"],
+select, input[type="password"],
+button {
+    width: 98%;
+    padding: 0.5rem;
+}
+
+input, select {
+    margin: 5px 0 10px 0;
+}
+
+button {
+    color: white;
+    background-color: #2EC4B6;
+    border: none;
+    padding: 1rem;
+    margin-top: 15px;
+}
+
+.container > p {
+    font-size: 10px;
+    width: 70%;
+    line-height: 1.2;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+span {
+    color: #7CD9D0;
+}
+
+@media only screen and (max-width: 330px){
+    body {
+        height: 100%;
+    }
+    
+    .flex {
+        flex-direction: column;
+    }
+    
+    .text-box { 
+        margin: 0 auto;
+        width: 90%;
+        text-align: left;
+    }
+
+    .text-box h1 {
+        font-size: 1rem;
+    }
+
+    .text-box p {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    
+    .form p {
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+    
+   .mobile-active {
+    display: block;
+   }
+   .desktop-active {
+    display: none;
+   }
+    
+}
+
+@media screen and (max-width: 430px){
+    body {
+        height: 100%;
+    }
+    
+    .flex {
+        flex-direction: column;
+    }
+    
+    .text-box { 
+        margin: 0 auto;
+        width: 90%;
+        text-align: left;
+    }
+
+    .text-box h1 {
+        font-size: 1rem;
+    }
+
+    .text-box p {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    
+    .form p {
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+    
+   .mobile-active {
+    display: block;
+   }
+   .desktop-active {
+    display: none;
+   }
+    
+} 
+
+@media screen and (max-width: 1025px){ 
+    .text-box {
+        margin-left: 20px;
+    }
+    .text-box p {
+        font-size: 0.8rem;
+    }
+ }
+
+/* @media only screen and (min-width: 992px){ ... }  */
