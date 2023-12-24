@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Application Form</title>
 </head>
 <body>
 
-    <ul>
-        <li><a href="./about.html">About me</a></li>
-        <li><a href="./index.html">Form</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="./about.html">About me</a></li>
+            <li><a href="./index.html">Form</a></li>
+        </ul>
+    </nav>
+
     <form action="your_action_url_here" method="POST">
 
         <h1>Application Form</h1>
@@ -18,14 +21,14 @@
 
         <div>
             <label for="first_name_id">First Name:</label>
-            <input type="text" id="first_name_id" placeholder="First Name" required minlength="2">
+            <input type="text" id="first_name_id" placeholder="First Name" required minlength="2" aria-required="true">
         </div>
-        <br>
+
         <div>
             <label for="last_name_id">Last Name:</label>
-            <input type="text" id="last_name_id" placeholder="Last Name" required>
+            <input type="text" id="last_name_id" placeholder="Last Name" required aria-required="true">
         </div>
-        <br>
+
         <div>
             <label for="gender">Gender:</label>
             <label for="male">
@@ -37,63 +40,72 @@
             Female
             </label>
         </div>
-        <br>
+
         <div>
             <label for="dob">Date of birth</label>
             <input type="date" id="dob">
         </div>
+
         <div>
             <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Email@yahoo.com" required>
+            <input type="email" id="email" placeholder="Email@yahoo.com" required aria-required="true" aria-describedby="email-help">
+            <span id="email-help">Please enter a valid email address.</span>
         </div>
-        <br>
+
         <div>
             <label for="education">Educational Level</label>
-            <select id="" title="select an option">
+            <select id="education" title="Select an option">
                 <option value="option1">Primary Education</option>
                 <option value="option2">Secondary Education</option>
                 <option value="option3">Tertiary Education</option>
             </select>
         </div>
-        <br>
+
         <div>
             <label for="country">Country</label>
-            <input type="text" id="country" placeholder="select your country">
+            <input type="text" id="country" placeholder="Select your country">
         </div>
+
         <div>
             <label for="state">State/city of residence</label>
             <input type="text" id="state" placeholder="Enter your state of residence">
         </div>
+
         <div>
             <label for="employment">Employment status</label>
-            <input type="text" id="employment" placeholder="employment status">
+            <input type="text" id="employment" placeholder="Employment status">
         </div>
+
         <div>
             <label for="phone">Phone number</label>
-            <input type="text" id="phone" placeholder="Phone number">
+            <input type="tel" id="phone" placeholder="Phone number">
         </div>
+
         <div>
             <label for="school">Choose school</label>
             <input type="text" id="school" placeholder="School">
         </div>
+
         <div>
             <label for="course">Choose course of study</label>
-            <input type="text" id="course" placeholder="select course">
+            <input type="text" id="course" placeholder="Select course">
         </div>
+
         <div>
             <label for="about-us">How did you hear about us</label>
             <input type="text" id="about-us" placeholder="Select channel">
         </div>
+
         <div>
-            <label for="discount">Scholarship/Discount Code(optional)</label>
-            <input type="text" id="discount" placeholder="scholarship/discount code">
+            <label for="discount">Scholarship/Discount Code (optional)</label>
+            <input type="text" id="discount" placeholder="Scholarship/discount code">
         </div>
 
-        <p>By clicking continue, I agree to Terms of Use and ackniwledge that I have read the Privacy Policy</p>
-        
+        <p>By clicking continue, I agree to the <a href="#" aria-describedby="terms-help">Terms of Use</a> and acknowledge that I have read the <a href="#" aria-describedby="privacy-help">Privacy Policy</a></p>
+
         <button type="submit">Proceed</button>
 
-        <p>Already have an account? <a href="#">sign in</a></p>
+        <p>Already have an account? <a href="#">Sign in</a></p>
     </form>
     
 </body>
