@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <ul>
+        <li><a href="./about.html">About me</a></li>
+        <li><a href="./index.html">Form</a></li>
+    </ul>
+    <form action="your_action_url_here" method="POST">
+
+        <h1>Application Form</h1>
+        <p>Fill in your details</p>
+
+        <div>
+            <label for="first_name_id">First Name:</label>
+            <input type="text" id="first_name_id" placeholder="First Name" required minlength="2">
+        </div>
+        <br>
+        <div>
+            <label for="last_name_id">Last Name:</label>
+            <input type="text" id="last_name_id" placeholder="Last Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender:</label>
+            <label for="male">
+            <input type="radio" id="male" name="gender" value="male" required>
+            Male
+            </label>
+            <label for="female">
+            <input type="radio" id="female" name="gender" value="female" required>
+            Female
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email@yahoo.com" required>
+        </div>
+        <br>
+        <div>
+            <label for="education">Educational Level</label>
+            <select id="" title="select an option">
+                <option value="option1">Primary Education</option>
+                <option value="option2">Secondary Education</option>
+                <option value="option3">Tertiary Education</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="country">Country</label>
+            <input type="text" id="country" placeholder="select your country">
+        </div>
+        <div>
+            <label for="state">State/city of residence</label>
+            <input type="text" id="state" placeholder="Enter your state of residence">
+        </div>
+        <div>
+            <label for="employment">Employment status</label>
+            <input type="text" id="employment" placeholder="employment status">
+        </div>
+        <div>
+            <label for="phone">Phone number</label>
+            <input type="text" id="phone" placeholder="Phone number">
+        </div>
+        <div>
+            <label for="school">Choose school</label>
+            <input type="text" id="school" placeholder="School">
+        </div>
+        <div>
+            <label for="course">Choose course of study</label>
+            <input type="text" id="course" placeholder="select course">
+        </div>
+        <div>
+            <label for="about-us">How did you hear about us</label>
+            <input type="text" id="about-us" placeholder="Select channel">
+        </div>
+        <div>
+            <label for="discount">Scholarship/Discount Code(optional)</label>
+            <input type="text" id="discount" placeholder="scholarship/discount code">
+        </div>
+
+        <p>By clicking continue, I agree to Terms of Use and ackniwledge that I have read the Privacy Policy</p>
+        
+        <button type="submit">Proceed</button>
+
+        <p>Already have an account? <a href="#">sign in</a></p>
+    </form>
+    
+</body>
+</html>
